@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 
 function Root() {
   return (
-    <div>
+    <div className="max-w-6xl mx-auto">
       <Navbar />
       <Outlet />
       <Footer />
