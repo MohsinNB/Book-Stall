@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Book from "./Book";
 
-const Books = () => {
+const Books = ({ data }) => {
+  const Books = data;
   //   const [books, setBooks] = useState([]);
   //   useEffect(() => {
   //     fetch("booksData.json")
@@ -9,7 +11,15 @@ const Books = () => {
   //         console.log(Data);
   //       });
   //   }, []);
-  return <div></div>;
+  return (
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {Books.map((book) => (
+          <Book key={book.bookId} data={book}></Book>
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default Books;

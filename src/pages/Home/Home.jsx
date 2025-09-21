@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <Books />
+      <Books data={data} />
     </>
   );
 };
