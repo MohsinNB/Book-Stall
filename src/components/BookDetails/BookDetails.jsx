@@ -72,32 +72,27 @@ const BookDetails = () => {
               <div></div>
 
               {/* Info grid */}
-              <div className="">
-                <div className="flex items-center">
-                  <h4 className="text-gray-600 ">Number of Pages:</h4>
-                  <h4 className="font-semibold text-gray-800">{totalPages}</h4>
+              <dl className="grid grid-cols-[200px_1fr] gap-y-2 text-sm">
+                <div className="contents">
+                  <dt className="text-gray-600">Number of Pages:</dt>
+                  <dd className="font-semibold">{totalPages}</dd>
                 </div>
-                <br />
 
-                <div className="flex items-center">
-                  <h4 className="text-gray-600 ">Publisher:</h4>
-                  <h4 className="font-semibold text-gray-800">{publisher}</h4>
+                <div className="contents">
+                  <dt className="text-gray-600">Publisher:</dt>
+                  <dd className="font-semibold">{publisher}</dd>
                 </div>
-                <br />
 
-                <div className="flex items-center">
-                  <h4 className="text-gray-600 ">Year of Publishing:</h4>
-                  <h4 className="font-semibold text-gray-800">
-                    {yearOfPublishing}
-                  </h4>
+                <div className="contents">
+                  <dt className="text-gray-600">Year of Publishing:</dt>
+                  <dd className="font-semibold">{yearOfPublishing}</dd>
                 </div>
-                <br />
 
-                <div className="flex items-center">
-                  <h4 className="text-gray-600 ">Rating:</h4>
-                  <h4 className="font-semibold text-gray-800">{rating}</h4>
+                <div className="contents">
+                  <dt className="text-gray-600">Rating:</dt>
+                  <dd className="font-semibold">{rating}</dd>
                 </div>
-              </div>
+              </dl>
             </div>
           </div>
         </article>
