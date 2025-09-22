@@ -1,10 +1,17 @@
 import React from "react";
+import { Link } from "react-router";
+import About from "../About/About";
+import Home from "../../pages/Home/Home";
 
 function Navbar() {
   const links = (
     <>
-      <li className="m-2">Home</li>
-      <li className="m-2">About</li>
+      <Link to="/">
+        <li className="m-2">Home</li>
+      </Link>
+      <Link to="/about">
+        <li className="m-2">About</li>
+      </Link>
     </>
   );
   return (
