@@ -12,7 +12,7 @@ const Book = ({ data }) => {
     rating,
     category,
     yearOfPublishing,
-
+    totalPages,
     tags,
     bookId,
   } = SingleBook;
@@ -42,6 +42,7 @@ const Book = ({ data }) => {
           <p>
             Books by: <span className=" font-bold"> {author}</span>
           </p>
+          <p>TotalPages: {totalPages}</p>
           <div className="border-t-1 border-dashed"></div>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">{category}</div>
