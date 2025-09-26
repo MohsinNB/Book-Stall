@@ -12,6 +12,9 @@ function Navbar() {
       <Link to="/about">
         <li className="m-2">About</li>
       </Link>
+      <Link to="/readlist">
+        <li className="m-2">My List</li>
+      </Link>
     </>
   );
   return (
